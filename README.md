@@ -1,9 +1,14 @@
 # portfolio_lucas_kindermann
-Desenvolvimento de uma landing page funcional destinada à apresentação de um portfólio pessoal. Trabalho realizado como atividade prática extra do curso de Introdução à Programação Front e Back-End apresentada pelo programa SCTEC, parceria entre o SENAI e o SCTI. A página foi desenvolvida utilizando as linguagens HTML, CSS e JavaScript
+
+Link do repositório no GitHub: https://github.com/lmkindermann/portfolio_lucas_kindermann/
+
+Desenvolvimento de uma landing page funcional destinada à apresentação de um portfólio pessoal. Trabalho realizado como atividade prática extra do curso de Introdução à Programação Front e Back-End apresentada pelo programa SCTEC, parceria entre o SENAI e o SCTI. A página foi desenvolvida utilizando as linguagens HTML, CSS e JavaScript.
 
 A página contém três arquivos principais, uma em cada linguagem mencionada: index.html, styles.css e script.js. Uma sub-pasta chamada pictures contém todas as imagens utilizadas para o desenvolvimento da página. É importante que todos estes documentos estejam reunidos e estruturados conforme disponibilizada ou apresentada no repositório.
 
-A página desenvolvida apresentam infomações do autor, inicialmente apresentando o propósito principal da página com intuito de conquistar o interesse de algum recrutador ou contratante para serviços especializados de desenvolvimento tecnológico, através de textos e figuras.
+A página desenvolvida apresenta infomações do autor, inicialmente mencionando o propósito principal da página com intuito de conquistar o interesse de algum recrutador ou contratante para serviços especializados de desenvolvimento tecnológico, através de textos e figuras. A página foi construída de maneira responsiva, permitindo a sua leitura em diferentes tamanhos de tela.
+
+O cabeçalho apresenta uma logomarca e os nomes das seções contidas na página, com atalhos diretos às mesmas através do clique ou toque na seção desejada. Em resolução reduzida, as opções ficam concentradas sob um botão de menu hamburguer.
 
 Na sequencia, a página apresenta o nome do profissional e aluno do curso mencionado acima, junto a sua descrição pessoal focada em seus objetivos profissionais.
 
