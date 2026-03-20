@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lucas Kindermann | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#home"><img src="./pictures/LK_Tech_logo.png" height="80"></img></a> 
+        <!-- <h3 class="logo">Lucas Kindermann | Portfolio</h3> -->
+        <button id="hamburger"><img src="./pictures/menu_hamburguer.png" height="40"></img></button>
+        <ul class="menu" id="menu">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="home">
+      <img id="img_cover" src="./pictures/LK_cover.png"> </img>
+      <h1 class="home-title">Sua visão, desenvolvida.</h1>
+      <h1 class="home-title">Seu produto, um sucesso!</h1>
+    </section>
+
+    <section id="about">
+      <div class="about-container">
+        <img id="img_about" src="./pictures/LK_jun25_circle.png"></img>
+        <h2>Lucas Kindermann</h2>        
+        <p>Sou um profissional da área da engenharia eletrônica com mais de 15 anos de experiência atuando com desenvolvimento de hardware e placas de circuito impresso (PCBs), layout de circuitos integrados, desenvolvimento de sistemas e produtos eletrônicos.</p>
+        <p>No momento, venho buscando uma mudança de carreira, desejando atuar com desenvolvimento de software para aplicações ou sistemas computacionais, preferencialmente através de codificação e depuração em Back-End.</p>
+        <p>Atualmente estou engajado com cursos e estudos das principais ferramentas e linguagens de programação do mercado, tais como HTML+CSS, JavaScript, Python e C/C++, combinando o pensamento estruturado da engenharia com as abordagens de software escaláveis.</p>
+        <p>Estou particularmente interessado em oportunidades onde sistemas, tecnologia e negócios se cruzam. Animado com o que está por vir.</p>
+      </div>
+    </section>     
+      
+    <section id="projects">
+      <h2 id="projects-title">Projetos</h2>
+      <p id="projects-description">Alguns projetos desenvolvidos recentemente</p>
+      <div class="projects-container">
+        <div class="projects-card">
+          <img src="./pictures/corrida.png" alt="Imagem do projeto" />
+          <h3>Simulação de Corrida</h3>
+          <p>Aplicação em JavaScript para simular uma corrida de carros com diferentes competidores, retornando o resultado final após um determinado número de voltas.</p>
+          <a href="https://github.com/lmkindermann/exercicios_javascript/blob/main/simulacao_corrida.js">Ver projeto</a>
+        </div>
+        <div class="projects-card">
+          <img src="./pictures/eleicao.png" alt="Imagem do projeto" />
+          <h3>Simulação de Eleições e Apuração de Votos</h3>
+          <p>Aplicação em JavaScript para simular uma eleição para diferentes candidatos e eleitores, seguido da apuração do resultado.</p>
+          <a href="https://github.com/lmkindermann/exercicios_javascript/blob/main/simulacao_eleicoes.js">Ver projeto</a>
+        </div>
+        <div class="projects-card">
+          <img src="./pictures/pico-rp2040.png" alt="Imagem do projeto" />
+          <h3>Sistema de Monitoramento Embarcado</h3>
+          <p>Aplicação didática para a placa Raspberry Pi Pico RP2040 utilizando a linguagem MicroPython, com monitoramento de grandezas físicas e transmissão de dados ao usuário.</p>
+          <a href="https://github.com/lmkindermann/rpico_mpy_monitoring_system">Ver projeto</a>
+        </div>          
+      </div>        
+    </section>
+
+    <section id="skills">
+      <h2 id="skills-title">Habilidades Técnicas</h2>
+      <p id="skills-description">Principais tecnologias, ferramentas e áreas de conhecimento que utilizo para desenvolver soluções completas</p>
+      <div class="skills-list">
+        <div class="skills-card">
+          <h3>Linguagens de Programação</h3>
+            <ul>
+              <li> HTML+CSS </li>
+              <li> JavaScript </li>
+              <li> C/C++ </li>
+              <li> Python </li>
+              <li> VHDL/Verilog </li>
+            </ul>            
+        </div>
+        <div class="skills-card">
+          <h3>Frameworks</h3>
+            <ul>
+              <li> Node.JS </li>
+              <li> Express.JS </li>
+              <li> React </li>
+              <li> Streamlit </li>                
+              <li> Django </li>
+            </ul>
+        </div>
+        <div class="skills-card">
+          <h3>Ferramentas</h3>
+            <ul>
+              <li> Visual Studio </li>
+              <li> LTspice </li>
+              <li> Altium </li>                
+              <li> LabView </li>
+              <li> MATLAB/Octave </li>                
+            </ul>
+        </div>
+        <div class="skills-card">
+          <h3>Competências</h3>
+            <ul>
+              <li> Desenvolvimento de Software </li>
+              <li> Projetos de Hardware e PCBs </li>
+              <li> Firmware e Sistemas Embarcados </li>
+              <li> Automação de Testes Eletrônicos </li>  
+              <li> Engenharia de Aplicação e Produtos </li>                
+            </ul>
+        </div>
+        <div class="skills-card">
+          <h3>Soft-Skills</h3>
+            <ul>
+              <li> Idioma Inglês Avançado/Fluente </li>
+              <li> Liderança Técnica </li>                
+              <li> Comunicação Internacional </li>
+              <li> Trabalho em Equipes Multidisciplinares </li>
+              <li> Mentorias e Treinamentos </li>                  
+            </ul>
+        </div>         
+    </section>
+
+    <section id="contact">
+      <h2 id="contact-title">Entre em contato</h2>
+      <p id="contact-description">Tem algum projeto em mente ou quer trocar uma ideia? Vamos inovar juntos! </p>
+      <div class="contact-list">
+        <div class="contact-item">
+          <button id="emailLink" class="contact-button">
+          <strong>Email: </strong>
+          <span>lmkindermann@gmail.com</span>
+          </button>
+        </div>
+        <div class="contact-item">
+          <button id="phoneLink" class="contact-button">
+          <strong>Telefone: </strong>
+          <span>(48) 99142-1484</span>
+          </button>
+        </div>
+        <div class="contact-item">
+          <button id="mapLink" class="contact-button">
+          <strong>Localidade: </strong>
+          <span>São José/SC, Brasil</span>
+          </button>
+        </div>
+      </div>
+      <div class="contact-network">
+        <a href="https://www.linkedin.com/in/lmkindermann/">LinkedIn</a>
+        <a href="https://github.com/lmkindermann">GitHub</a>     
+      </div>
+    </section>  
+
+    <footer class="footer">
+      <p>© 2026 Lucas Kindermann</p>
+    </footer>
+  </body>
+  <script src="script.js"> </script>  
+</html>
+
+<!--
+
+
+
+<form id="f1">
+      <label for="in1">Nome:</label>
+      <input type="text" id="in1" required placeholder="Digite seu nome!" />
+      <br />
+      <label for="in2">Idade:</label>
+      <input type="number" id="in2" required placeholder="Digite sua idade!" />
+      <button type="submit">Cadastrar</button>
+      <button type="reset">Limpar</button>
+    </form>
+
+-->
