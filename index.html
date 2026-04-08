@@ -10,140 +10,193 @@
   <body>
     <header class="header">
       <nav class="navbar">
-        <a href="#home"><img src="./pictures/LK_Tech_logo.png" height="80"></img></a> 
+        <a class="logo" href="#home"><img src="./pictures/LK_Tech_logo.png" height="80"></img></a> 
         <!-- <h3 class="logo">Lucas Kindermann | Portfolio</h3> -->
         <button id="hamburger"><img src="./pictures/menu_hamburguer.png" height="40"></img></button>
         <ul class="menu" id="menu">
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#skills">Habilidades</a></li>
-          <li><a href="#contact">Contato</a></li>
+          <li><a id="menu1" href="#about">Sobre</a></li>
+          <li><a id="menu2" href="#services">Serviços</a></li>
+          <li><a id="menu3" href="#projects">Projetos</a></li>
+          <li><a id="menu4" href="#skills">Habilidades</a></li>
+          <li><a id="menu5" href="#contacts">Contato</a></li>
         </ul>
+        <button id="lang" onclick="toggleLanguage()"><img src="./pictures/br_flag.png" height="20"></img></button>
       </nav>
     </header>
 
     <section class="home">
       <img id="img_cover" src="./pictures/LK_cover.png"> </img>
-      <h1 class="home-title">Sua visão, desenvolvida.</h1>
-      <h1 class="home-title">Seu produto, um sucesso!</h1>
+      <h1 class="home-title" id="home-title">Sua visão, desenvolvida.<br>Seu produto, um sucesso!</h1>
     </section>
 
     <section id="about">
       <div class="about-container">
         <img id="img_about" src="./pictures/LK_jun25_circle.png"></img>
         <h2>Lucas Kindermann</h2>        
-        <p>Sou um profissional da área da engenharia eletrônica com mais de 15 anos de experiência atuando com desenvolvimento de hardware e placas de circuito impresso (PCBs), layout de circuitos integrados, desenvolvimento de sistemas e produtos eletrônicos.</p>
-        <p>No momento, venho buscando uma mudança de carreira, desejando atuar com desenvolvimento de software para aplicações ou sistemas computacionais, preferencialmente através de codificação e depuração em Back-End.</p>
-        <p>Atualmente estou engajado com cursos e estudos das principais ferramentas e linguagens de programação do mercado, tais como HTML+CSS, JavaScript, Python e C/C++, combinando o pensamento estruturado da engenharia com as abordagens de software escaláveis.</p>
-        <p>Estou particularmente interessado em oportunidades onde sistemas, tecnologia e negócios se cruzam. Animado com o que está por vir.</p>
+        <p id="about1">Sou um profissional da área da engenharia eletrônica com mais de 15 anos de experiência atuando em funções de engenharia de hardware, aplicação, sistemas e produto. Ao longo deste tempo, trabalhei com uma start-up bem sucedida, empresas nacionalmente relevantes e multi-nacionais renomadas.</p>
+        <p id="about2">Especialidade comprovada em projetos de circuitos eletrônicos, design de PCBs, layouts de CIs analógicos e de sinal misto, programação para dispositivos embarcados e aplicações de alto nível, planejamento, automação e execução de testes eletrônicos para caracterização de CIs e validação de produto.</p>
+        <p id="about3">Sólida experiência em mentoria e capacitação de equipes de engenharia por meio de suporte especializado e treinamentos, colaboração com equipes multi-disciplinares em escala global, desenvolvimento completo de hardware e de produtos eletrônicos (do conceito ao lançamento), criação e depuração de códigos de programação e habilidades avançadas em layout de CIs e PCBs.</p>
+        <p id="about4">Atualmente estou em busca de novas oportunidades ou projetos freelance, enquanto sigo engajado com cursos e estudos das principais tecnologias, ferramentas e linguagens de programação usados na indústria, para atuar na área da Eng. Eletrônica ou com Desenvolvimento de Software, visando uma possível transição de carreira.</p>
       </div>
     </section>     
+
+    <section id="services">
+      <h2 id="services-title">Serviços</h2>
+      <p id="services-description">Com experiência nestas atividades, disponibilizo os seguintes serviços para a sua empresa ou projeto</p>
+      <div class="services-container">
+        <div class="services-card">
+          <img src="./pictures/SW_DEV.png"/>
+          <h3 id="serviceSW-title">Desenvolvimento de Software</h3>
+          <p id="serviceSW-description">Codificação e depuração de programas voltados ao desenvolvimento de aplicações ou sistemas computacionais, atuando em Front-End ou Back-End através do uso das principais linguagens e frameworks disponíveis.</p>
+        </div>               
+        <div class="services-card">
+          <img src="./pictures/FW.jpg"/>
+          <h3 id="serviceSE-title">Sistemas Embarcados</h3>
+          <p id="serviceSE-description">Desenvolvimento de Firmware e integração Hardware-Software para os principais Microcontroladores e FPGAs disponíveis no mercado para aplicações industriais e de IoT.</p>
+        </div>
+        <div class="services-card">
+          <img src="./pictures/IC_LAY.png"/>
+          <h3 id="serviceCI-title">Layout de Circuitos Integrados</h3>
+          <p id="serviceCI-description">Desenvolvimento, verificação e extração de layouts para projetos de circuitos integrados analógicos e de sinais-mistos em nós tecnológicos maduros ou avançados.</p>
+        </div>
+        <div class="services-card">
+          <img src="./pictures/AP_ENG.png"/>
+          <h3 id="serviceEA-title">Engenharia de Aplicação</h3>
+          <p id="serviceEA-description">Apresentação, treinamento, mentoria e suporte especializado de produtos, soluções ou ferramentas de natureza eletrônica e tecnológica à empresas, clientes ou equipes de engenharia.</p>
+        </div>
+        <div class="services-card">
+          <img src="./pictures/PCB.jpg"/>
+          <h3 id="serviceHW-title">Projeto de Hardware e PCBs</h3>
+          <p id="serviceHW-description">Projeto, esquemático, simulação e layout de placas eletrônicas para aplicações com circuitos analógicos, digitais e de potência, do conceito à produção.</p>
+        </div> 
+        <div class="services-card">
+          <img src="./pictures/TESTS.jpg"/>
+          <h3 id="serviceET-title">Ensaios Eletrônicos</h3>
+          <p id="serviceET-description">Planejamento, automação e execução de ensaios de bring-up, caracterização completa ou validação de produtos eletrônicos, incluindo ensaios climáticos, HALT, burn-in, pré-conformidade e acompanhamento de certificações. </p>
+        </div>
+        <div class="services-card">
+          <img src="./pictures/PRO_DEV.png"/>
+          <h3 id="servicePE-title">Desenvolvimento de Produto Eletrônico</h3>
+          <p id="servicePE-description">Definição de especificações técnicas, conformidade com normas industriais, gestão de documentação de produto, planejamento de testes e validação, alinhamento com as partes interessadas, fornecedores e equipes multi-disciplinares.</p>
+        </div>
+      </div>
+    </section>
       
     <section id="projects">
       <h2 id="projects-title">Projetos</h2>
-      <p id="projects-description">Alguns projetos desenvolvidos recentemente</p>
+      <p id="projects-description">Alguns projetos ou produtos desenvolvidos recentemente, em colaboração com empresas ou de maneira independente</p>
       <div class="projects-container">
         <div class="projects-card">
-          <img src="./pictures/corrida.png" alt="Imagem do projeto" />
-          <h3>Simulação de Corrida</h3>
-          <p>Aplicação em JavaScript para simular uma corrida de carros com diferentes competidores, retornando o resultado final após um determinado número de voltas.</p>
-          <a href="https://github.com/lmkindermann/exercicios_javascript/blob/main/simulacao_corrida.js">Ver projeto</a>
+          <img src="./pictures/bodycamera.png" alt="Imagem do projeto" />
+          <h3 id="projectBC-title">Câmera Corporal Portátil</h3>
+          <p id="projectBC-description">Produto OEM customizado, homologado e lançado para o mercado brasileiro, atuando em conjunto com os times de desenvolvimento, fornecedores estrangeiros e equipes multi-disciplinares da empresa.</p>
+          <a id="projectBC-link" href="https://www.intelbras.com/pt-br/camera-corporal-portatil-bcm-1035-gw">Ver produto</a>
         </div>
         <div class="projects-card">
-          <img src="./pictures/eleicao.png" alt="Imagem do projeto" />
-          <h3>Simulação de Eleições e Apuração de Votos</h3>
-          <p>Aplicação em JavaScript para simular uma eleição para diferentes candidatos e eleitores, seguido da apuração do resultado.</p>
-          <a href="https://github.com/lmkindermann/exercicios_javascript/blob/main/simulacao_eleicoes.js">Ver projeto</a>
+          <img src="./pictures/controlador_forno.png" alt="Imagem do projeto" />
+          <h3 id="projectOV-title">Controlador de Forno para Fogão de piso à Indução</h3>
+          <p id="projectOV-description">Sistema eletrônico integrado a uma linha de produtos lançada para o mercado norte-americano, atuando em conjunto com gestores, fornecedores e equipes multi-disciplinares, localizados em diferentes regiões do planeta.</p>
+          <a id="projectOV-link" href="https://www.frigidaire.com/en/p/kitchen/ranges/induction-ranges/FCRI3062AS">Ver produto</a>
         </div>
         <div class="projects-card">
-          <img src="./pictures/pico-rp2040.png" alt="Imagem do projeto" />
-          <h3>Sistema de Monitoramento Embarcado</h3>
-          <p>Aplicação didática para a placa Raspberry Pi Pico RP2040 utilizando a linguagem MicroPython, com monitoramento de grandezas físicas e transmissão de dados ao usuário.</p>
-          <a href="https://github.com/lmkindermann/rpico_mpy_monitoring_system">Ver projeto</a>
+          <img src="./pictures/rp2040_application.png" alt="Imagem do projeto" />
+          <h3 id="projectRP-title">Sistema de Monitoramento Embarcado</h3>
+          <p id="projectRP-description">Aplicação didática para a placa Raspberry Pi Pico RP2040 utilizando a linguagem MicroPython, com monitoramento de grandezas físicas e transmissão de dados ao usuário.</p>
+          <a id="projectRP-link" href="https://github.com/lmkindermann/rpico_mpy_monitoring_system">Ver projeto</a>
         </div>          
       </div>        
     </section>
 
     <section id="skills">
       <h2 id="skills-title">Habilidades Técnicas</h2>
-      <p id="skills-description">Principais tecnologias, ferramentas e áreas de conhecimento que utilizo para desenvolver soluções completas</p>
+      <p id="skills-description">Principais tecnologias, ferramentas e habilidades que utilizo para desenvolver soluções completas</p>
       <div class="skills-list">
         <div class="skills-card">
-          <h3>Linguagens de Programação</h3>
+          <h3 id="skillPL-title">Linguagens</h3>
             <ul>
-              <li> HTML+CSS </li>
-              <li> JavaScript </li>
-              <li> C/C++ </li>
-              <li> Python </li>
-              <li> VHDL/Verilog </li>
+              <li id="skillPL-item1">C/C++</li>
+              <li id="skillPL-item2">VHDL/Verilog</li>
+              <li id="skillPL-item3">Python</li>
+              <li id="skillPL-item4">JavaScript</li>
+              <li id="skillPL-item5">HTML+CSS</li>
             </ul>            
         </div>
         <div class="skills-card">
-          <h3>Frameworks</h3>
+          <h3 id="skillFW-title">Frameworks</h3>
             <ul>
-              <li> Node.JS </li>
-              <li> Express.JS </li>
-              <li> React </li>
-              <li> Streamlit </li>                
-              <li> Django </li>
+              <li id="skillFW-item1">Node.JS</li>
+              <li id="skillFW-item2">Express.JS</li>
+              <li id="skillFW-item3">React</li>
+              <li id="skillFW-item4">Streamlit</li>                
+              <li id="skillFW-item5">Django</li>
             </ul>
         </div>
         <div class="skills-card">
-          <h3>Ferramentas</h3>
+          <h3 id="skillTO-title">Ferramentas</h3>
             <ul>
-              <li> Visual Studio </li>
-              <li> LTspice </li>
-              <li> Altium </li>                
-              <li> LabView </li>
-              <li> MATLAB/Octave </li>                
+              <li id="skillTO-item1">Visual Studio e VS Code</li>
+              <li id="skillTO-item2">STM32Cube, Vivado, Quartus</li>
+              <li id="skillTO-item3">Altium, Kicad, Proteus</li>                
+              <li id="skillTO-item4">Cadence Virtuoso, Assura, ADE</li>
+              <li id="skillTO-item5">LTSpice, MATLAB/Octave, LabView</li>
             </ul>
         </div>
         <div class="skills-card">
-          <h3>Competências</h3>
+          <h3 id="skillSS-title">Soft-Skills</h3>
             <ul>
-              <li> Desenvolvimento de Software </li>
-              <li> Projetos de Hardware e PCBs </li>
-              <li> Firmware e Sistemas Embarcados </li>
-              <li> Automação de Testes Eletrônicos </li>  
-              <li> Engenharia de Aplicação e Produtos </li>                
+              <li id="skillSS-item1">Idioma Inglês avançado/fluente</li>
+              <li id="skillSS-item2">Liderança técnica</li>                
+              <li id="skillSS-item3">Comunicação internacional</li>
+              <li id="skillSS-item4">Trabalho em equipes multi-disciplinares</li>
+              <li id="skillSS-item5">Apresentações, mentorias e treinamentos</li>
+            </ul>
+        </div>       
+        <div class="skills-card">
+          <h3 id="skillPCB-title">Técnicas de Layout de PCBs</h3>
+            <ul>
+              <li id="skillPCB-item1">Definição de empilhamento de placa multicamadas</li>
+              <li id="skillPCB-item2">Roteamento de alta-densidade e alta-velocidade</li>
+              <li id="skillPCB-item3">Controle de impedância e redução de ruídos</li>
+              <li id="skillPCB-item4">Conformidade EMC/EMI, SI/PI e normas técnicas</li>
+              <li id="skillPCB-item5">Verificações DRC, LVS, ERC, BOM e arquivos Gerber</li>
             </ul>
         </div>
         <div class="skills-card">
-          <h3>Soft-Skills</h3>
+          <h3 id="skillIC-title">Técnicas de Layout de CIs</h3>
             <ul>
-              <li> Idioma Inglês Avançado/Fluente </li>
-              <li> Liderança Técnica </li>                
-              <li> Comunicação Internacional </li>
-              <li> Trabalho em Equipes Multidisciplinares </li>
-              <li> Mentorias e Treinamentos </li>                  
+              <li id="skillIC-item1">Posicionamento de Transistores com Casamento e Simetria</li>
+              <li id="skillIC-item2">Roteamento com Blindagem e Redução de Parasitas e Ruídos</li>
+              <li id="skillIC-item3">Prevenção de efeitos EM/IR drop e proteção ESD</li>
+              <li id="skillIC-item4">Verificações DRC, LVS, ERC, Antenna e Metal Filling</li>
+              <li id="skillIC-item5">Extração de Parasitas e Streamout GDS-II</li>
             </ul>
-        </div>         
+        </div>
     </section>
 
-    <section id="contact">
-      <h2 id="contact-title">Entre em contato</h2>
-      <p id="contact-description">Tem algum projeto em mente ou quer trocar uma ideia? Vamos inovar juntos! </p>
-      <div class="contact-list">
-        <div class="contact-item">
-          <button id="emailLink" class="contact-button">
-          <strong>Email: </strong>
-          <span>lmkindermann@gmail.com</span>
+    <section id="contacts">
+      <h2 id="contacts-title">Entre em contato</h2>
+      <p id="contacts-description">Tem algum projeto em mente ou quer trocar uma ideia? Vamos inovar juntos!</p>
+      <div class="contacts-list">
+        <div class="contacts-item">
+          <button id="emailLink" class="contacts-button">
+          <strong id="contact1-name">Email:</strong>
+          <span id="contact1-value">lmkindermann@gmail.com</span>
           </button>
         </div>
-        <div class="contact-item">
-          <button id="phoneLink" class="contact-button">
-          <strong>Telefone: </strong>
-          <span>(48) 99142-1484</span>
+        <div class="contacts-item">
+          <button id="phoneLink" class="contacts-button">
+          <strong id="contact2-name">Telefone:</strong>
+          <span id="contact2-value">+55 (48) 99142-1484</span>
           </button>
         </div>
-        <div class="contact-item">
-          <button id="mapLink" class="contact-button">
-          <strong>Localidade: </strong>
-          <span>São José/SC, Brasil</span>
+        <div class="contacts-item">
+          <button id="mapLink" class="contacts-button">
+          <strong id="contact3-name">Localidade:</strong>
+          <span id="contact3-value">São José/SC, Brasil</span>
           </button>
         </div>
       </div>
-      <div class="contact-network">
+      <div class="contacts-network">
         <a href="https://www.linkedin.com/in/lmkindermann/">LinkedIn</a>
         <a href="https://github.com/lmkindermann">GitHub</a>     
       </div>
@@ -154,20 +207,8 @@
     </footer>
   </body>
   <script src="script.js"> </script>  
+  <script type="module">
+    import data from './translations.json' with { type: 'json' };
+    console.log(data);
+  </script>
 </html>
-
-<!--
-
-
-
-<form id="f1">
-      <label for="in1">Nome:</label>
-      <input type="text" id="in1" required placeholder="Digite seu nome!" />
-      <br />
-      <label for="in2">Idade:</label>
-      <input type="number" id="in2" required placeholder="Digite sua idade!" />
-      <button type="submit">Cadastrar</button>
-      <button type="reset">Limpar</button>
-    </form>
-
--->
