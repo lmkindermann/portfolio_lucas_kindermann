@@ -151,11 +151,13 @@ li {
 .services-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
 .services-container > * {
   flex: 1 1 250px;
+  max-width: 400px;
 }
 
 .services-card {
@@ -176,7 +178,7 @@ li {
 }
 
 .services-card img {
-  width: 100%; /* taxa de largura do elemento pai OU tamanho total da imagem */
+  max-width: 100%; /* taxa de largura do elemento pai OU tamanho total da imagem */
   object-fit: contain; /* ajusta dentro do limite do card (alternativa) */
   object-position: center;
 }
@@ -204,11 +206,13 @@ li {
 .projects-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
 .projects-container > * {
   flex: 1 1 250px;
+  max-width: 400px;
 }
 
 .projects-card {
