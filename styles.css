@@ -106,10 +106,12 @@ li {
 
 .about-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 20px;
-  flex-direction: column;
-  justify-content: space-evenly;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #img_about {
@@ -122,10 +124,27 @@ li {
 }
 
 .about-container p {
-  font-size: 18px;
   text-align: center;
-  width: 85%;
+  font-size: 18px;
   color: #e5e5e5;
+}
+
+.about-container li {
+  text-align: center;
+  font-size: 18px;
+  color: #fca311;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+#about5 {
+  font-weight: bold;
+}
+
+#about6 {
+  font-weight: bold;
 }
 
 /* Service */

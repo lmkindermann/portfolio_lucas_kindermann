@@ -14,6 +14,16 @@ async function changeLanguage(opt) {
   document.getElementById("about2").textContent = data[opt].txt_about2;
   document.getElementById("about3").textContent = data[opt].txt_about3;
   document.getElementById("about4").textContent = data[opt].txt_about4;
+  document.getElementById("about4_bullet1").textContent =
+    data[opt].txt_about4_bullet1;
+  document.getElementById("about4_bullet2").textContent =
+    data[opt].txt_about4_bullet2;
+  document.getElementById("about4_bullet3").textContent =
+    data[opt].txt_about4_bullet3;
+  document.getElementById("about4_bullet4").textContent =
+    data[opt].txt_about4_bullet4;
+  document.getElementById("about5").textContent = data[opt].txt_about5;
+  document.getElementById("about6").textContent = data[opt].txt_about6;
   document.getElementById("services-title").textContent =
     data[opt].txt_services_title;
   document.getElementById("services-description").textContent =
@@ -68,6 +78,18 @@ async function changeLanguage(opt) {
     data[opt].txt_projectRP_description;
   document.getElementById("projectRP-link").textContent =
     data[opt].txt_projectRP_link;
+  document.getElementById("projectPK-title").textContent =
+    data[opt].txt_projectPK_title;
+  document.getElementById("projectPK-description").textContent =
+    data[opt].txt_projectPK_description;
+  document.getElementById("projectPK-link").textContent =
+    data[opt].txt_projectPK_link;
+  document.getElementById("projectBM-title").textContent =
+    data[opt].txt_projectBM_title;
+  document.getElementById("projectBM-description").textContent =
+    data[opt].txt_projectBM_description;
+  document.getElementById("projectBM-link").textContent =
+    data[opt].txt_projectBM_link;
   document.getElementById("skills-title").textContent =
     data[opt].txt_skills_title;
   document.getElementById("skills-description").textContent =
@@ -84,30 +106,54 @@ async function changeLanguage(opt) {
     data[opt].txt_skillPL_item4;
   document.getElementById("skillPL-item5").textContent =
     data[opt].txt_skillPL_item5;
-  document.getElementById("skillFW-title").textContent =
-    data[opt].txt_skillFW_title;
-  document.getElementById("skillFW-item1").textContent =
-    data[opt].txt_skillFW_item1;
-  document.getElementById("skillFW-item2").textContent =
-    data[opt].txt_skillFW_item2;
-  document.getElementById("skillFW-item3").textContent =
-    data[opt].txt_skillFW_item3;
-  document.getElementById("skillFW-item4").textContent =
-    data[opt].txt_skillFW_item4;
-  document.getElementById("skillFW-item5").textContent =
-    data[opt].txt_skillFW_item5;
-  document.getElementById("skillTO-title").textContent =
-    data[opt].txt_skillTO_title;
-  document.getElementById("skillTO-item1").textContent =
-    data[opt].txt_skillTO_item1;
-  document.getElementById("skillTO-item2").textContent =
-    data[opt].txt_skillTO_item2;
-  document.getElementById("skillTO-item3").textContent =
-    data[opt].txt_skillTO_item3;
-  document.getElementById("skillTO-item4").textContent =
-    data[opt].txt_skillTO_item4;
-  document.getElementById("skillTO-item5").textContent =
-    data[opt].txt_skillTO_item5;
+  document.getElementById("skillST-title").textContent =
+    data[opt].txt_skillST_title;
+  document.getElementById("skillST-item1").textContent =
+    data[opt].txt_skillST_item1;
+  document.getElementById("skillST-item2").textContent =
+    data[opt].txt_skillST_item2;
+  document.getElementById("skillST-item3").textContent =
+    data[opt].txt_skillST_item3;
+  document.getElementById("skillST-item4").textContent =
+    data[opt].txt_skillST_item4;
+  document.getElementById("skillST-item5").textContent =
+    data[opt].txt_skillST_item5;
+  document.getElementById("skillET-title").textContent =
+    data[opt].txt_skillET_title;
+  document.getElementById("skillET-item1").textContent =
+    data[opt].txt_skillET_item1;
+  document.getElementById("skillET-item2").textContent =
+    data[opt].txt_skillET_item2;
+  document.getElementById("skillET-item3").textContent =
+    data[opt].txt_skillET_item3;
+  document.getElementById("skillET-item4").textContent =
+    data[opt].txt_skillET_item4;
+  document.getElementById("skillET-item5").textContent =
+    data[opt].txt_skillET_item5;
+  document.getElementById("skillPT-title").textContent =
+    data[opt].txt_skillPT_title;
+  document.getElementById("skillPT-item1").textContent =
+    data[opt].txt_skillPT_item1;
+  document.getElementById("skillPT-item2").textContent =
+    data[opt].txt_skillPT_item2;
+  document.getElementById("skillPT-item3").textContent =
+    data[opt].txt_skillPT_item3;
+  document.getElementById("skillPT-item4").textContent =
+    data[opt].txt_skillPT_item4;
+  document.getElementById("skillPT-item5").textContent =
+    data[opt].txt_skillPT_item5;
+  document.getElementById("skillEM-title").textContent =
+    data[opt].txt_skillEM_title;
+  document.getElementById("skillEM-item1").textContent =
+    data[opt].txt_skillEM_item1;
+  document.getElementById("skillEM-item2").textContent =
+    data[opt].txt_skillEM_item2;
+  document.getElementById("skillEM-item3").textContent =
+    data[opt].txt_skillEM_item3;
+  document.getElementById("skillEM-item4").textContent =
+    data[opt].txt_skillEM_item4;
+  document.getElementById("skillEM-item5").textContent =
+    data[opt].txt_skillEM_item5;
   document.getElementById("skillSS-title").textContent =
     data[opt].txt_skillSS_title;
   document.getElementById("skillSS-item1").textContent =
@@ -163,12 +209,18 @@ async function changeLanguage(opt) {
 }
 
 function toggleLanguage() {
+  const container = document.querySelector(".about-container");
+  const cont_list = document.querySelector(".about-container li");
   if (currLang === "ptbr") {
     currLang = "enus";
     lang.innerHTML = '<img src="./pictures/us_flag.png" height="20">';
+    container.style.maxWidth = "70%";
+    cont_list.style.maxWidth = "65%";
   } else {
     currLang = "ptbr";
     lang.innerHTML = '<img src="./pictures/br_flag.png" height="20">';
+    container.style.maxWidth = "80%";
+    cont_list.style.maxWidth = "70%";
   }
   changeLanguage(currLang);
 }
