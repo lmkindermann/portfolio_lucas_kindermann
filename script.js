@@ -13,17 +13,15 @@ async function changeLanguage(opt) {
   document.getElementById("about1").textContent = data[opt].txt_about1;
   document.getElementById("about2").textContent = data[opt].txt_about2;
   document.getElementById("about3").textContent = data[opt].txt_about3;
+  document.getElementById("about3_bullet1").textContent =
+    data[opt].txt_about3_bullet1;
+  document.getElementById("about3_bullet2").textContent =
+    data[opt].txt_about3_bullet2;
+  document.getElementById("about3_bullet3").textContent =
+    data[opt].txt_about3_bullet3;
+  document.getElementById("about3_bullet4").textContent =
+    data[opt].txt_about3_bullet4;
   document.getElementById("about4").textContent = data[opt].txt_about4;
-  document.getElementById("about4_bullet1").textContent =
-    data[opt].txt_about4_bullet1;
-  document.getElementById("about4_bullet2").textContent =
-    data[opt].txt_about4_bullet2;
-  document.getElementById("about4_bullet3").textContent =
-    data[opt].txt_about4_bullet3;
-  document.getElementById("about4_bullet4").textContent =
-    data[opt].txt_about4_bullet4;
-  document.getElementById("about5").textContent = data[opt].txt_about5;
-  document.getElementById("about6").textContent = data[opt].txt_about6;
   document.getElementById("services-title").textContent =
     data[opt].txt_services_title;
   document.getElementById("services-description").textContent =
@@ -209,18 +207,12 @@ async function changeLanguage(opt) {
 }
 
 function toggleLanguage() {
-  const container = document.querySelector(".about-container");
-  const cont_list = document.querySelector(".about-container li");
   if (currLang === "ptbr") {
     currLang = "enus";
     lang.innerHTML = '<img src="./pictures/us_flag.png" height="20">';
-    container.style.maxWidth = "70%";
-    cont_list.style.maxWidth = "65%";
   } else {
     currLang = "ptbr";
     lang.innerHTML = '<img src="./pictures/br_flag.png" height="20">';
-    container.style.maxWidth = "80%";
-    cont_list.style.maxWidth = "70%";
   }
   changeLanguage(currLang);
 }
