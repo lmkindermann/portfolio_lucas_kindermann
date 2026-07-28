@@ -1,8 +1,8 @@
 {
   "ptbr": {
     "txt_menu1": "Sobre",
-    "txt_menu2": "Serviços",
-    "txt_menu3": "Projetos",
+    "txt_menu2": "Projetos",
+    "txt_menu3": "Serviços",
     "txt_menu4": "Habilidades",
     "txt_menu5": "Contato",
     "txt_home_title": "Sua visão, desenvolvida.<br>Seu produto, um sucesso!",
@@ -109,8 +109,8 @@
   },
   "enus": {
     "txt_menu1": "About",
-    "txt_menu2": "Services",
-    "txt_menu3": "Projects",
+    "txt_menu2": "Projects",
+    "txt_menu3": "Services",
     "txt_menu4": "Skills",
     "txt_menu5": "Contact",
     "txt_home_title": "Your vision, developed.<br>Your product, a success!",
