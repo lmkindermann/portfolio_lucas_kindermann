@@ -1,6 +1,16 @@
 let currLang = "ptbr";
 let lang = document.getElementById("lang");
 
+// Automatically load English version using link suffix: /?lang=en
+document.addEventListener("DOMContentLoaded", () => {
+  const parametros = new URLSearchParams(window.location.search);
+  const idiomaLink = parametros.get("lang") || "pt";
+  if (idiomaLink === "en") {
+    toggleLanguage(currLang);
+  }
+  document.body.classList.add("visible");
+});
+
 async function changeLanguage(opt) {
   const response = await fetch("translations.json");
   const data = await response.json();
@@ -22,6 +32,7 @@ async function changeLanguage(opt) {
   document.getElementById("about3_bullet4").textContent =
     data[opt].txt_about3_bullet4;
   document.getElementById("about4").textContent = data[opt].txt_about4;
+  document.getElementById("about5").textContent = data[opt].txt_about5;
   document.getElementById("services-title").textContent =
     data[opt].txt_services_title;
   document.getElementById("services-description").textContent =

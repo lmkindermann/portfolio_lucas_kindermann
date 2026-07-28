@@ -10,6 +10,12 @@ body {
   /*font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;*/
   background: #000000;
   color: #fca311;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
+body.visible {
+  opacity: 1;
 }
 
 a {
