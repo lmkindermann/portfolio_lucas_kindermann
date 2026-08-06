@@ -32,7 +32,7 @@ async function changeLanguage(opt) {
   document.getElementById("about3_bullet4").textContent =
     data[opt].txt_about3_bullet4;
   document.getElementById("about4").textContent = data[opt].txt_about4;
-  document.getElementById("about5").textContent = data[opt].txt_about5;
+  //document.getElementById("about5").textContent = data[opt].txt_about5;
   document.getElementById("services-title").textContent =
     data[opt].txt_services_title;
   document.getElementById("services-description").textContent =
@@ -220,10 +220,10 @@ async function changeLanguage(opt) {
 function toggleLanguage() {
   if (currLang === "ptbr") {
     currLang = "enus";
-    lang.innerHTML = '<img src="./pictures/us_flag.png" height="20">';
+    lang.innerHTML = '<img src="./pictures/br_flag.png" height="20">';
   } else {
     currLang = "ptbr";
-    lang.innerHTML = '<img src="./pictures/br_flag.png" height="20">';
+    lang.innerHTML = '<img src="./pictures/us_flag.png" height="20">';
   }
   changeLanguage(currLang);
 }
